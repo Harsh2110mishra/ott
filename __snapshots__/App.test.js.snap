@@ -1,0 +1,295 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<App /> renders correctly 1`] = `
+<RNCSafeAreaProvider
+  onInsetsChange={[Function]}
+  style={
+    [
+      {
+        "flex": 1,
+      },
+      undefined,
+    ]
+  }
+>
+  <RNSScreenStack
+    style={
+      {
+        "flex": 1,
+      }
+    }
+  >
+    <RNSScreen
+      collapsable={false}
+      gestureResponseDistance={
+        {
+          "bottom": -1,
+          "end": -1,
+          "start": -1,
+          "top": -1,
+        }
+      }
+      nativeBackButtonDismissalEnabled={false}
+      onAppear={[Function]}
+      onDisappear={[Function]}
+      onDismissed={[Function]}
+      onGestureCancel={[Function]}
+      onHeaderBackButtonClicked={[Function]}
+      onNativeDismissCancelled={[Function]}
+      onTransitionProgress={[Function]}
+      onWillDisappear={[Function]}
+      replaceAnimation="push"
+      sheetAllowedDetents="large"
+      sheetCornerRadius={-1}
+      sheetExpandsWhenScrolledToEdge={true}
+      sheetGrabberVisible={false}
+      sheetLargestUndimmedDetent="all"
+      stackPresentation="push"
+      style={
+        {
+          "bottom": 0,
+          "left": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+        }
+      }
+      swipeDirection="horizontal"
+    >
+      <View
+        accessibilityElementsHidden={false}
+        importantForAccessibility="auto"
+        style={
+          {
+            "flex": 1,
+            "flexDirection": "column-reverse",
+          }
+        }
+      >
+        <View
+          collapsable={false}
+          style={
+            [
+              {
+                "flex": 1,
+              },
+              {
+                "backgroundColor": "rgb(242, 242, 242)",
+              },
+              undefined,
+            ]
+          }
+        >
+          <View
+            style={
+              {
+                "alignContent": "center",
+                "backgroundColor": "black",
+                "flex": 1,
+                "justifyContent": "center",
+              }
+            }
+          >
+            <View
+              style={
+                {
+                  "backgroundColor": "white",
+                  "borderRadius": 12,
+                  "marginHorizontal": 10,
+                  "marginTop": 0,
+                  "padding": 8,
+                }
+              }
+            >
+              <View
+                style={
+                  {
+                    "flexDirection": "row",
+                  }
+                }
+              >
+                <TextInput
+                  onChangeText={[Function]}
+                  placeholder="Search for movie..."
+                  testID="searchBtn"
+                  value=""
+                />
+                <Text />
+              </View>
+            </View>
+            <RCTScrollView
+              contentContainerStyle={
+                {
+                  "alignContent": "center",
+                  "justifyContent": "center",
+                }
+              }
+              keyboardShouldPersistTaps="handled"
+              showsVerticalScrollIndicator={false}
+            >
+              <View>
+                <Text
+                  style={
+                    {
+                      "color": "white",
+                      "fontSize": 18,
+                      "fontWeight": "800",
+                      "marginBottom": 15,
+                      "marginHorizontal": 20,
+                    }
+                  }
+                >
+                  Now Playing
+                </Text>
+                <RCTScrollView
+                  data={[]}
+                  getItem={[Function]}
+                  getItemCount={[Function]}
+                  horizontal={true}
+                  keyExtractor={[Function]}
+                  onContentSizeChange={[Function]}
+                  onLayout={[Function]}
+                  onMomentumScrollBegin={[Function]}
+                  onMomentumScrollEnd={[Function]}
+                  onScroll={[Function]}
+                  onScrollBeginDrag={[Function]}
+                  onScrollEndDrag={[Function]}
+                  removeClippedSubviews={false}
+                  renderItem={[Function]}
+                  scrollEventThrottle={0.0001}
+                  stickyHeaderIndices={[]}
+                  testID="nowPlayingFlatList"
+                  viewabilityConfigCallbackPairs={[]}
+                >
+                  <View />
+                </RCTScrollView>
+                <Text
+                  style={
+                    {
+                      "color": "white",
+                      "fontSize": 18,
+                      "fontWeight": "800",
+                      "marginBottom": 15,
+                      "marginHorizontal": 20,
+                    }
+                  }
+                >
+                  Popular
+                </Text>
+                <RCTScrollView
+                  data={[]}
+                  getItem={[Function]}
+                  getItemCount={[Function]}
+                  horizontal={true}
+                  keyExtractor={[Function]}
+                  onContentSizeChange={[Function]}
+                  onLayout={[Function]}
+                  onMomentumScrollBegin={[Function]}
+                  onMomentumScrollEnd={[Function]}
+                  onScroll={[Function]}
+                  onScrollBeginDrag={[Function]}
+                  onScrollEndDrag={[Function]}
+                  removeClippedSubviews={false}
+                  renderItem={[Function]}
+                  scrollEventThrottle={0.0001}
+                  stickyHeaderIndices={[]}
+                  testID="popularFlatList"
+                  viewabilityConfigCallbackPairs={[]}
+                >
+                  <View />
+                </RCTScrollView>
+                <Text
+                  style={
+                    {
+                      "color": "white",
+                      "fontSize": 18,
+                      "fontWeight": "800",
+                      "marginBottom": 15,
+                      "marginHorizontal": 20,
+                    }
+                  }
+                >
+                  Top Rated
+                </Text>
+                <RCTScrollView
+                  data={[]}
+                  getItem={[Function]}
+                  getItemCount={[Function]}
+                  horizontal={true}
+                  keyExtractor={[Function]}
+                  onContentSizeChange={[Function]}
+                  onLayout={[Function]}
+                  onMomentumScrollBegin={[Function]}
+                  onMomentumScrollEnd={[Function]}
+                  onScroll={[Function]}
+                  onScrollBeginDrag={[Function]}
+                  onScrollEndDrag={[Function]}
+                  removeClippedSubviews={false}
+                  renderItem={[Function]}
+                  scrollEventThrottle={0.0001}
+                  stickyHeaderIndices={[]}
+                  testID="topRatedFlatList"
+                  viewabilityConfigCallbackPairs={[]}
+                >
+                  <View />
+                </RCTScrollView>
+                <Text
+                  style={
+                    {
+                      "color": "white",
+                      "fontSize": 18,
+                      "fontWeight": "800",
+                      "marginBottom": 15,
+                      "marginHorizontal": 20,
+                    }
+                  }
+                >
+                  Upcoming
+                </Text>
+                <RCTScrollView
+                  data={[]}
+                  getItem={[Function]}
+                  getItemCount={[Function]}
+                  horizontal={true}
+                  keyExtractor={[Function]}
+                  onContentSizeChange={[Function]}
+                  onLayout={[Function]}
+                  onMomentumScrollBegin={[Function]}
+                  onMomentumScrollEnd={[Function]}
+                  onScroll={[Function]}
+                  onScrollBeginDrag={[Function]}
+                  onScrollEndDrag={[Function]}
+                  removeClippedSubviews={false}
+                  renderItem={[Function]}
+                  scrollEventThrottle={0.0001}
+                  stickyHeaderIndices={[]}
+                  testID="upcomingFlatList"
+                  viewabilityConfigCallbackPairs={[]}
+                >
+                  <View />
+                </RCTScrollView>
+              </View>
+            </RCTScrollView>
+          </View>
+        </View>
+      </View>
+      <RNSScreenStackHeaderConfig
+        backButtonInCustomView={false}
+        backTitleVisible={true}
+        backgroundColor="black"
+        color="white"
+        direction="ltr"
+        disableBackButtonMenu={false}
+        hidden={false}
+        hideBackButton={false}
+        largeTitleHideShadow={false}
+        title="Home"
+        titleColor="red"
+        titleFontSize={24}
+        topInsetEnabled={false}
+        translucent={false}
+      />
+    </RNSScreen>
+  </RNSScreenStack>
+</RNCSafeAreaProvider>
+`;
