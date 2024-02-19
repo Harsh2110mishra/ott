@@ -54,9 +54,9 @@ Commit categories
 
 - In project folder, run `eas build --profile development --platform android`
 
-### Generating Build for simulator/emulator
+### Generating APK Build for android device
 
-- In project folder, run `eas build --profile development --platform android`
+- In project folder, run `eas build -p android --profile preview`
 
 ### Project testing using jest:
 
