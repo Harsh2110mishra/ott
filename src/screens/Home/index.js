@@ -86,6 +86,19 @@ export default function Index(props) {
                 <Movie item={item} navigation={props.navigation} />
               )}
             />
+            {props.favMovie.length ? (
+              <>
+                <Text style={styles.heading}>Favourite</Text>
+                <FlatList
+                  testID="favFlatList"
+                  horizontal
+                  data={props.favMovie}
+                  renderItem={({ item }) => (
+                    <Movie item={item} navigation={props.navigation} />
+                  )}
+                />
+              </>
+            ) : null}
           </>
         )}
       </ScrollView>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import {
   ScrollView,
   View,
@@ -9,13 +9,22 @@ import {
   Pressable,
   TouchableOpacity,
 } from "react-native";
+import { useRoute } from "@react-navigation/native";
+
+import MainContext from "../../context/store";
+
 import { sampleImage } from "../../constants/image";
 import Icon from "react-native-vector-icons/AntDesign";
 import Icon2 from "react-native-vector-icons/MaterialIcons";
 import color from "../../constants/colors";
 
-const Details = ({ route }) => {
+const Details = (props) => {
+  const route = useRoute();
   const { item } = route.params;
+  const { movies } = useContext(MainContext);
+
+  const [movieData, setMovieData] = movies;
+
   return (
     <ScrollView style={styles.container}>
       <Image style={styles.image} source={{ uri: sampleImage }} />
@@ -46,7 +55,18 @@ const Details = ({ route }) => {
       </View>
       <Text style={styles.description}>{item.overview}</Text>
       <View style={styles.hideButtonView}>
-        <TouchableOpacity onPress={() => {}} styles={styles.hideButton}>
+        <TouchableOpacity
+          onPress={() => {
+            setMovieData(() => {
+              if (movieData.length) {
+                return movieData.concat(item);
+              }
+              return [item];
+            });
+            props.navigation.navigate("Home");
+          }}
+          styles={styles.hideButton}
+        >
           <Text style={styles.hideButtonText}>Add to favourite</Text>
         </TouchableOpacity>
       </View>

@@ -1,15 +1,24 @@
 import React, { useMemo, useState } from "react";
 
 // state context
-import store from "../context/store";
+import MainContext from "../context/store";
 
 // imported navigator
 import Main from "./main";
 
 export default function AppNavigation() {
+  const [movieData, setMovieData] = useState([]);
+
+  const store = useMemo(
+    () => ({
+      movies: [movieData, setMovieData],
+    }),
+    [movieData]
+  );
+
   return (
-    <storeContext.Provider value={store}>
+    <MainContext.Provider value={store}>
       <Main />
-    </storeContext.Provider>
+    </MainContext.Provider>
   );
 }
