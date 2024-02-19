@@ -1,6 +1,6 @@
 # OTT App - Android & iOS
 
-React Native application that allows users to browse movies from TMDB using the provided APIs.
+React Native application that allows users to browse movies from TMDB.
 
 ## Tech Stack
 
