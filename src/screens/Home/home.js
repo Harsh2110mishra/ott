@@ -100,9 +100,10 @@ export default function Home({ navigation }) {
       setSearchText(text);
       setAllMovies(setAllMovies);
     } else {
-      const filtered = allMovies.filter((movie) =>
-        movie.title.toLowerCase().includes(text.toLowerCase())
-      );
+      const filtered = allMovies.filter((movie) => {
+        movie.title.toLowerCase().includes(text.toLowerCase());
+      });
+      console.log("filtered", filtered);
       setAllMovies(filtered);
       setSearchText(text);
     }
