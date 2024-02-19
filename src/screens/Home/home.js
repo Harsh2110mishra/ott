@@ -1,5 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useContext } from "react";
 import axios, { all } from "axios";
+
+import MainContext from "../../context/store";
 
 import { baseUrl, apiHeaders } from "../../constants/env";
 
@@ -12,6 +14,10 @@ export default function Home({ navigation }) {
   const [upcoming, setUpcoming] = useState([]);
   const [allMovies, setAllMovies] = useState([]);
   const [searchText, setSearchText] = useState("");
+
+  const { movies } = useContext(MainContext);
+
+  const [movieData] = movies;
 
   useEffect(() => {
     const nowPlayingApiCall = async () => {
@@ -98,13 +104,13 @@ export default function Home({ navigation }) {
         movie.title.toLowerCase().includes(text.toLowerCase())
       );
       setAllMovies(filtered);
-      console.log("item", allMovies);
       setSearchText(text);
     }
   };
   return (
     <Index
       searchText={searchText}
+      favMovie={movieData}
       handleSearch={handleSearch}
       allMovies={allMovies}
       setSearchText={setSearchText}
