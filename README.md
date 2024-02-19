@@ -62,6 +62,10 @@ Commit categories
 
 - In root dir, run `npm run test`
 
+## Screenshot
+
+![GIF](https://github.com/Harsh2110mishra/ott/blob/master/assets/ottRN.gif)
+
 ## Support
 
 For support, email harsh2110.mishra@gmail.com.
